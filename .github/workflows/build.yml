@@ -4,7 +4,7 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 
 
-class MainApp(App):
+class KCApp(App):
     def build(self):
         self.opreators=["/", "*", "+", "-"]
         self.last_was_operator = None
@@ -71,5 +71,5 @@ class MainApp(App):
 
 
 if __name__ == "__main__":
-    app = MainApp()
+    app = KCApp()
     app.run()
